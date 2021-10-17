@@ -1,0 +1,368 @@
+:root {
+  --bobux-light: #ffffff;
+  --bobux-medium: #b8b8b8;
+  --bobux-dark: #303030;
+  --bobux-night: #121212;
+  --bobux-blue: #3e72ed;
+  --bobux-light-blue: #0069ed;
+}
+
+body {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+  background: var(--bobux-night);
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #404040;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.navbar {
+  overflow: hidden;
+  background: none;
+  padding: 20px;
+  transition: 0.3s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  color: var(--bobux-light);
+}
+
+.navbarimg {
+  height: 50px;
+  width: 50px;
+  border-radius: 5%;
+  display: inline-block;
+}
+
+.navbarname {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -45px;
+  margin-left: 5px;
+  font-size: 25px;
+}
+
+.navbarright {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+}
+
+.navbutton {
+  display: inline-block;
+  border: none;
+  padding: 15px;
+  margin-right: 10px;
+  text-decoration: none;
+  background: none;
+  color: var(--bobux-light);
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.introtitle {
+  margin-top: 150px;
+  font-size: 55px;
+  color: var(--bobux-light);
+  text-align: center;
+  border-bottom: none;
+  text-shadow: 0px 0px 6px var(--bobux-medium);
+  transition: 0.8s;
+}
+
+.introdescription {
+  opacity: 0;
+  position: absolute;
+  margin-top: 250px;
+  max-width: 500px;
+  font-size: 25px;
+  color: var(--bobux-light);
+  text-align: center;
+  text-shadow: 0px 0px 6px var(--bobux-medium);
+  transition: 0.8s;
+}
+
+.topintro {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+.topbackground {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background: var(--bobux-dark);
+  background-image: url("./assets/images/cityscape-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.topblurcover {
+  background-color: #212121;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  opacity: 0.6;
+}
+
+.introgrid {
+  z-index: 69; /*funny number*/
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-buttons {
+  margin-top: 30px;
+  position: relative;
+}
+
+.bobux-intro-button {
+  min-width: 150px;
+  display: inline-block;
+  border: none;
+  padding: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  background: none;
+  color: var(--bobux-light);
+  font-size: 17px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.blue {
+  background: var(--bobux-light-blue);
+}
+
+.blue:hover, .blue:focus {
+  background: #0053ba;
+  min-width: 155px;
+}
+
+.border {
+  padding: 13px 18px;
+  border: 1px solid var(--bobux-medium);
+}
+
+.border:hover, .border:focus {
+  border: 2px solid #e0e0e0;
+  min-width: 155px;
+}
+
+.mainarea {
+  position: absolute;
+  margin-top: 100vh;
+  width: 100%;
+  background: var(--bobux-night);
+  color: var(--bobux-light);
+}
+
+.about, .booking {
+  margin: 15px;
+  border-collapse: collapse;
+  margin-right: 25px !important;
+  margin-top: 25px !important;
+}
+
+.whyus {
+  margin: 15px;
+  border-collapse: collapse;
+  margin-right: 25px !important;
+  margin-top: 10px !important;
+}
+
+.aboutbobux, .abouttext {
+  display: inline-block;
+  position: relative;
+}
+
+.aboutbobux {
+  border-radius: 10%;
+  height: 200px;
+  width: 200px;
+}
+
+.aboutbobuxsmall {
+  border-radius: 10%;
+  height: 100px;
+  width: 100px;
+}
+
+.abouttext {
+  max-height: 200px;
+  overflow-y: auto;
+  position: relative;
+  vertical-align: top;
+  margin-left: 10px;
+  margin-top: -40px;
+}
+
+.aboutbobuxtext {
+  display: block;
+  margin-top: -5px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.bookingbg {
+  position: relative;
+  background: var(--bobux-dark);
+  background-image: url("./assets/images/bobuxroom.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  height: 510px;
+}
+
+.bookinggrid {
+  position: absolute;
+  width: 100%;
+  margin-top: -470px;
+}
+
+.booking {
+  display: flex;
+  justify-content: center;
+}
+
+.bookinginside {
+  background: var(--bobux-dark);
+  max-width: 400px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.inputbooking {
+  -webkit-appearance: none;
+  width: 170%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid var(--bobux-medium);
+}
+
+.inputbooking:focus {
+  outline-width: 0;
+}
+
+.bookingsubmit {
+  width: 181%;
+  display: inline-block;
+  border: none;
+  padding: 15px;
+  text-decoration: none;
+  background: none;
+  color: var(--bobux-light);
+  font-size: 17px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.2s;
+  background: var(--bobux-light-blue);
+}
+
+/*copied and pasted from https://projects.lukehaas.me/css-loaders/ */
+.loader, .loader:before, .loader:after {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.5s infinite ease-in-out;
+  animation: load7 1.5s infinite ease-in-out;
+}
+.loader {
+  color: #ffffff;
+  font-size: 10px;
+  margin: 5px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
+  position: absolute;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -15px;
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+.loader:after {
+  left: 15px;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}

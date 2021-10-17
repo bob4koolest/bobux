@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<HTML>
+  <HEAD>
+    <LINK REL="stylesheet" HREF="style.css">
+    <SCRIPT SRC="index.js"></SCRIPT>
+    <TITLE>Bobux Hotel | Official Website</TITLE>
+    <LINK HREF="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" REL="stylesheet">
+  </HEAD>
+  <BODY ONLOAD="init()">
+    <!--main navigation menu -->
+    <DIV CLASS="navbar" ID="navbar">
+      <IMG CLASS="navbarimg" SRC="./assets/images/bobuxlogo.JPG"><DIV CLASS="navbarname">obux Hotel</DIV>
+      <DIV CLASS="navbarright">
+        <A CLASS="navbutton" ID="home" HREF="#top">Home</A>|
+        <A CLASS="navbutton" ID="about" HREF="#aboutpl">About</A>|
+        <A CLASS="navbutton" ID="booking" HREF="#bookingpl">Booking and Pricing</A>|
+        <A CLASS="navbutton" ID="reviews" HREF="#reviews">Reviews</A>|
+        <A CLASS="navbutton" ID="locations" HREF="#locations">Locations</A>
+      </DIV>
+    </DIV>
+
+    <DIV CLASS="topintro">
+      <DIV CLASS="topbackground" ID="topbackground"></DIV>
+      <DIV CLASS="topblurcover">
+      </DIV>
+      <DIV CLASS="introgrid">
+        <DIV CLASS="introtitle" ID="introtitle">Bobux Hotel</DIV>
+        <!-- grouping buttons w/ description to keep them together -->
+        <DIV CLASS="introdescription" ID="introdescription">Imagine a place. We'll help you get there. Join us at Bobux Hotel for the travel experience of the future.
+          <DIV CLASS="intro-buttons">
+            <BUTTON CLASS="bobux-intro-button blue">Book Today</BUTTON>
+            <BUTTON CLASS="bobux-intro-button border">Learn More</BUTTON>
+          </DIV>
+        </DIV>
+      </DIV>
+    </DIV>
+    <DIV CLASS="mainarea">
+      <DIV ID="aboutpl" STYLE="position: absolute; margin-top: -80px;"></DIV>
+      <TABLE CLASS="about">
+        <TR>
+          <TD>
+            <IMG CLASS="aboutbobux" SRC="./assets/images/bobuxman.jpg"></IMG>
+          </TD>
+          <TD>
+            <DIV CLASS="abouttext">
+              <H2 STYLE="padding-bottom: 5px; border-bottom: 2px solid var(--bobux-blue)">About Bobux Hotel</H2>
+              <DIV CLASS="aboutbobuxtext">
+                The roots of Bobux Hotel began in the year 69 AD, when the Romans discovered the location of the almighty Bobux Man. The Bobux Man promised to provide food and shelter to the Romans at an affordable rate as he possessed the world's supply of this valuable resource, and so Bobux Hotel began. The tradition of affordable yet luxurious travel and lodging continues to this day, and new technologies are constantly being developed by the Bobux Man to make your travels a bit safer, cheaper, yet more comfortable.
+              </DIV>
+            </DIV>
+          </TD>
+        </TR>
+      </TABLE>
+      <H2 STYLE="padding-bottom: 5px; margin-left: 15px; margin-bottom: -5px;">Why choose us?</H2>
+      <TABLE CLASS="whyus">
+        <TR>
+          <TD>
+            <IMG CLASS="aboutbobuxsmall" SRC="./assets/images/bobuxman.jpg"></IMG>
+          </TD>
+          <TD>
+            <DIV CLASS="abouttext">
+              <H3 STYLE="padding-bottom: 5px; border-bottom: 2px solid var(--bobux-blue)">Affordable</H3>
+              <DIV CLASS="aboutbobuxtext">
+                The Bobux Man is very generous and is dedicated to making travel more affordable. He accepts payment in Bobux only, but offers free exchange services from any currency.
+              </DIV>
+            </DIV>
+          </TD>
+        </TR>
+
+        <TR>
+          <TD>
+            <IMG CLASS="aboutbobuxsmall" SRC="./assets/images/bobuxman.jpg"></IMG>
+          </TD>
+          <TD>
+            <DIV CLASS="abouttext">
+              <H3 STYLE="padding-bottom: 5px; border-bottom: 2px solid var(--bobux-blue)">Luxurious</H3>
+              <DIV CLASS="aboutbobuxtext">
+                The Bobux Man is very generous and is dedicated to making travel more affordable. He accepts payment in Bobux only, but offers free exchange services from any currency.
+              </DIV>
+            </DIV>
+          </TD>
+        </TR>
+
+        <TR>
+          <TD>
+            <IMG CLASS="aboutbobuxsmall" SRC="./assets/images/bobuxman.jpg"></IMG>
+          </TD>
+          <TD>
+            <DIV CLASS="abouttext">
+              <H3 STYLE="padding-bottom: 5px; border-bottom: 2px solid var(--bobux-blue)">Unique and Fun</H3>
+              <DIV CLASS="aboutbobuxtext">
+                The Bobux Man is very generous and is dedicated to making travel more affordable. He accepts payment in Bobux only, but offers free exchange services from any currency.
+              </DIV>
+            </DIV>
+          </TD>
+        </TR>
+      </TABLE>
+
+      <DIV ID="bookingpl"></DIV>
+      <DIV CLASS="bookingbg"></DIV>
+      <DIV CLASS="bookinggrid">
+        <DIV CLASS="bookinginside">
+          <TABLE CLASS="booking">
+            <TBODY STYLE="width: 100%">
+              <TR>
+                <TD>
+                  <H2>Make a Booking</H2>
+                </TD>
+              </TR>
+              <TR>
+                <TD>
+                  <DIV STYLE="margin-bottom: 10px;">
+                    Enter a day:<BR>
+                    <INPUT ID="bdate" CLASS="inputbooking" TYPE="date">
+                  </DIV>
+                  <DIV STYLE="margin-bottom: 5px;">
+                    Find a location:<BR>
+                    <INPUT ID="bbooking" CLASS="inputbooking" PLACEHOLDER="Ex. Columbus, OH" TYPE="text">
+                  </DIV>
+                  <DIV ID="bdiv" STYLE="width: 181%; border-bottom: 2px solid var(--bobux-medium); margin-bottom: 15px;"></DIV>
+                  <BUTTON CLASS="bookingsubmit blue" ID="bookingsubmit" ONSUBMIT="return;" ONCLICK="checkBooking()"><DIV ID="loadsubmit" STYLE="display: inline-block;">Submit</DIV><DIV ID="loaderone" STYLE="display: none; margin-left: 30px;"><DIV CLASS="loader" STYLE="display: inline; margin-top: -35px;"></DIV></DIV></BUTTON>
+                  <DIV ID="errormessage" STYLE="font-size: 15px; margin-top: 5px; color: #f55353; display: none">Error: Bobux Hotel is a very popular hotel, and all of our locations and rooms are booked. Please check again later.</DIV>
+                </TD>
+              </TR>
+            </TBODY>
+          </TABLE>
+        </DIV>
+      </DIV>
+      m
+    </DIV>
