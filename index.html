@@ -1,8 +1,18 @@
 <!DOCTYPE html>
+<!--
+Website design made by AZ
+*************************
+Discord - bob4koolest#3622 (DM me if you need anything)
+Discord server - https://discord.com/invite/pQ5pPqKcKv
+Youtube channel - https://youtube.com/UndefinedUser
+
+You may reuse this site's code/design for any non-commercial purpose without restriction.
+-->
 <HTML>
   <HEAD>
     <LINK REL="stylesheet" HREF="style.css">
     <SCRIPT SRC="index.js"></SCRIPT>
+    <LINK REL="stylesheet" HREF="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <TITLE>Bobux Hotel | Official Website</TITLE>
     <LINK HREF="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" REL="stylesheet">
   </HEAD>
@@ -14,8 +24,8 @@
         <A CLASS="navbutton" ID="home" HREF="#top">Home</A>|
         <A CLASS="navbutton" ID="about" HREF="#aboutpl">About</A>|
         <A CLASS="navbutton" ID="booking" HREF="#bookingpl">Booking and Pricing</A>|
-        <A CLASS="navbutton" ID="reviews" HREF="#reviews">Reviews</A>|
-        <A CLASS="navbutton" ID="locations" HREF="#locations">Locations</A>
+        <A CLASS="navbutton" ID="reviews" HREF="#reviewspl">Reviews</A>|
+        <A CLASS="navbutton" ID="locations" HREF="#locationspl">Locations</A>
       </DIV>
     </DIV>
 
@@ -28,8 +38,8 @@
         <!-- grouping buttons w/ description to keep them together -->
         <DIV CLASS="introdescription" ID="introdescription">Imagine a place. We'll help you get there. Join us at Bobux Hotel for the travel experience of the future.
           <DIV CLASS="intro-buttons">
-            <BUTTON CLASS="bobux-intro-button blue">Book Today</BUTTON>
-            <BUTTON CLASS="bobux-intro-button border">Learn More</BUTTON>
+            <A CLASS="bobux-intro-button blue" HREF="#bookingpl">Book Today</A>
+            <A CLASS="bobux-intro-button border" HREF="#aboutpl">Learn More</A>
           </DIV>
         </DIV>
       </DIV>
@@ -44,7 +54,7 @@
           <TD>
             <DIV CLASS="abouttext">
               <H2 STYLE="padding-bottom: 5px; border-bottom: 2px solid var(--bobux-blue)">About Bobux Hotel</H2>
-              <DIV CLASS="aboutbobuxtext">
+              <DIV CLASS="aboutbobuxtexttop">
                 The roots of Bobux Hotel began in the year 69 AD, when the Romans discovered the location of the almighty Bobux Man. The Bobux Man promised to provide food and shelter to the Romans at an affordable rate as he possessed the world's supply of this valuable resource, and so Bobux Hotel began. The tradition of affordable yet luxurious travel and lodging continues to this day, and new technologies are constantly being developed by the Bobux Man to make your travels a bit safer, cheaper, yet more comfortable.
               </DIV>
             </DIV>
@@ -55,7 +65,7 @@
       <TABLE CLASS="whyus">
         <TR>
           <TD>
-            <IMG CLASS="aboutbobuxsmall" SRC="./assets/images/bobuxman.jpg"></IMG>
+            <IMG CLASS="aboutbobuxsmall" SRC="./assets/images/bobuxabout1.JPG"></IMG>
           </TD>
           <TD>
             <DIV CLASS="abouttext">
@@ -69,13 +79,13 @@
 
         <TR>
           <TD>
-            <IMG CLASS="aboutbobuxsmall" SRC="./assets/images/bobuxman.jpg"></IMG>
+            <IMG CLASS="aboutbobuxsmall" SRC="./assets/images/bobuxabout2.jpg"></IMG>
           </TD>
           <TD>
             <DIV CLASS="abouttext">
               <H3 STYLE="padding-bottom: 5px; border-bottom: 2px solid var(--bobux-blue)">Luxurious</H3>
               <DIV CLASS="aboutbobuxtext">
-                The Bobux Man is very generous and is dedicated to making travel more affordable. He accepts payment in Bobux only, but offers free exchange services from any currency.
+                Every room has a ultra-fast BobloxNet&trade; connection, a 420k TV, and 5 king-sized beds, starting at only 9 bobux per night! The hotel provides all 3 meals, and the Bobux Man himself will serve you breakfast and deliver it to your room. He also provides unlimited foot massages.
               </DIV>
             </DIV>
           </TD>
@@ -83,20 +93,44 @@
 
         <TR>
           <TD>
-            <IMG CLASS="aboutbobuxsmall" SRC="./assets/images/bobuxman.jpg"></IMG>
+            <IMG CLASS="aboutbobuxsmall" SRC="./assets/images/bobuxabout3.jpg"></IMG>
           </TD>
           <TD>
             <DIV CLASS="abouttext">
               <H3 STYLE="padding-bottom: 5px; border-bottom: 2px solid var(--bobux-blue)">Unique and Fun</H3>
               <DIV CLASS="aboutbobuxtext">
-                The Bobux Man is very generous and is dedicated to making travel more affordable. He accepts payment in Bobux only, but offers free exchange services from any currency.
+                As the Bobux Man is a very wealthy and cultured individual, he has many bobux generators, enabling you to play your favorite Boblox&trade; games and make unlimited purchases using the BobuxNet&trade; currency.
               </DIV>
             </DIV>
           </TD>
         </TR>
       </TABLE>
 
-      <DIV ID="bookingpl"></DIV>
+      <DIV ID="reviewspl" STYLE="position: absolute; margin-top: -110px;"></DIV>
+      <H2 STYLE="text-align: center; margin: 5px; margin-top: 20px;">Reviews</H2>
+      <DIV CLASS="review-area">
+        <DIV CLASS="review-card">
+          <DIV CLASS="review-profile">JM</DIV>
+          <DIV CLASS="review-name">Joe Mom</DIV><BR>
+          <SPAN CLASS="fa fa-star star"></SPAN><SPAN CLASS="fa fa-star star"></SPAN><SPAN CLASS="fa fa-star star"></SPAN><SPAN CLASS="fa fa-star star"></SPAN><SPAN CLASS="fa fa-star star"></SPAN>
+          <DIV CLASS="review-content">This establishment is one of the finest I have ever visited. I came here with some of my friends after we came up from a blast fishing trip down in Pee Pee Township. The owner was so nice. We had several large bags of chicken nuggets that came from the Arby's down in Pee Pee, and the owner was so accommodating by allowing us to put them in the pool during our stay. They took such good care of my chicken nuggets, that by the time I came back to the hotel after a business trip, they were covered in a delicious green fungal seasoning from the pool. Not only will this wonderful establishment make you food, but they will even improve the food you bring to them, FOR Free. I tipped them so many Bobux for their wonderful service. Please visit this hotel. God Bless this fine lodging establishment.</DIV>
+        </DIV>
+        <DIV CLASS="review-card">
+          <DIV CLASS="review-profile reviewblue">IU</DIV>
+          <DIV CLASS="review-name">Internet User</DIV><BR>
+          <SPAN CLASS="fa fa-star star"></SPAN><SPAN CLASS="fa fa-star star"></SPAN><SPAN CLASS="fa fa-star star"></SPAN><SPAN CLASS="fa fa-star star"></SPAN><SPAN CLASS="fa fa-star star"></SPAN>
+          <DIV CLASS="review-content">OMG! Literally the best experience of my life! 10/10 would recommend. I enjoyed the free foot rubs.</DIV>
+        </DIV>
+        <DIV CLASS="review-card">
+          <DIV CLASS="review-profile reviewgreen">TE</DIV>
+          <DIV CLASS="review-name">Tax Evader</DIV><BR>
+          <SPAN CLASS="fa fa-star star"></SPAN><SPAN CLASS="fa fa-star star"></SPAN><SPAN CLASS="fa fa-star star"></SPAN><SPAN CLASS="fa fa-star star"></SPAN><SPAN CLASS="fa fa-star star"></SPAN>
+          <DIV CLASS="review-content">This is the greatest hotel I've been to. I was very pleased to encounter the bobux man I'd heard so much about. He personally went to each guest's room and made them breakfast. I received the finest orange juice and several (3) slices of Canadian bacon (1/4 cm cut). Everything I could possibly want was provided. They even had a bobux-only casino in the basement. I may have lost millions, but I had a great time. Definitely will go back, if I can get enough bobux. I must add that it was very clean and luxurious.</DIV>
+        </DIV>
+      </DIV>
+      <DIV STYLE="height: 50px;"></DIV> <!--literally just a divider, nothing else -->
+
+      <DIV ID="bookingpl" STYLE="position: absolute; margin-top: -90px"></DIV>
       <DIV CLASS="bookingbg"></DIV>
       <DIV CLASS="bookinggrid">
         <DIV CLASS="bookinginside">
@@ -126,5 +160,36 @@
           </TABLE>
         </DIV>
       </DIV>
-      m
+
+      <DIV ID="locationspl"></DIV>
+      <H2 STYLE="text-align: center; margin: 5px; margin-top: 40px;">Locations</H2>
+      <!--reusing review cards as location cards as well bc I'm lazy-->
+      <DIV CLASS="review-area">
+        <DIV CLASS="review-card">
+          <DIV CLASS="location columbus"></DIV>
+          <DIV CLASS="location-name"><B>Columbus</B></DIV><BR>
+          <DIV CLASS="review-content">This is our classic location! We feature a huge swimming pool, breathtaking views of the city, and convenient access to the Bobux National Bank. <A CLASS="link1" HREF="https://goo.gl/maps/JtHmtBp3DaquVP9L8" TARGET="_blank" REL="nofollow">Our location (Google Maps)</A></DIV>
+        </DIV>
+        <DIV CLASS="review-card">
+          <DIV CLASS="location square"></DIV>
+          <DIV CLASS="location-name" STYLE="margin-top: 10px !important"><B>Tiananmen<BR>Square</B></DIV><BR>
+          <DIV CLASS="review-content">We are still constructing this place! Definitely not due to government restrictions, we're unable to disclose any further information about what did not happen here in 1989.</DIV>
+        </DIV>
+        <DIV CLASS="review-card">
+          <DIV CLASS="location dubai"></DIV>
+          <DIV CLASS="location-name"><B>Dubai</B></DIV><BR>
+          <DIV CLASS="review-content">This location is under construction but is almost complete! This hotel will have 99999 floors and tower into space, making it the tallest building on Earth! It'll also have a massive bobux tree in the lobby.</DIV>
+        </DIV>
+      </DIV>
+
+      <!--bottom bar-->
+      <DIV CLASS="bottombar">
+        <DIV STYLE="display: inline-block">&copy;2021 AZ (UndefinedUser)</DIV>
+        <DIV STYLE="display: inline-block; position: relative; float: right;">
+          <A CLASS="link2" HREF="https://youtube.com/UndefinedUser">Youtube</A>
+          <A CLASS="link2" HREF="https://discord.gg/pQ5pPqKcKv">Discord Server</A>
+        </DIV>
+      </DIV>
     </DIV>
+  </BODY>
+</HTML>

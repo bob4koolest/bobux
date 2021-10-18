@@ -18,6 +18,33 @@ html {
   scroll-behavior: smooth;
 }
 
+.link1 {
+  color: var(--bobux-light-blue);
+  transition: 0.3s;
+}
+
+.link1:visited {
+  color: var(--bobux-light-blue);
+}
+
+.link1:hover {
+  color: var(--bobux-medium);
+}
+
+.link2 {
+  color: var(--bobux-light);
+  transition: 0.3s;
+  margin-left: 20px;
+}
+
+.link2:visited {
+  color: var(--bobux-light);
+}
+
+.link2:hover {
+  color: var(--bobux-medium);
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -242,6 +269,15 @@ html {
 .aboutbobuxtext {
   display: block;
   margin-top: -5px;
+  max-height: 50px;
+  overflow-y: auto;
+}
+
+.aboutbobuxtexttop {
+  display: block;
+  margin-top: -5px;
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 h2 {
@@ -365,4 +401,115 @@ h2 {
   40% {
     box-shadow: 0 2.5em 0 0;
   }
+}
+
+.review-area {
+  padding: 20px;
+  text-align: center;
+}
+
+.review-card {
+  display: inline-block;
+  background: var(--bobux-dark);
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 29px -2px #000000;
+  box-shadow: 0px 0px 29px -2px #000000;
+  width: 25%;
+  margin: 10px;
+  text-align: left !important;
+  min-width: 240px;
+  transition: 0.2s;
+}
+
+.review-card:hover {
+  -webkit-box-shadow: 0px 0px 29px 15px #000000;
+  box-shadow: 0px 0px 29px 15px #000000;
+}
+
+.review-profile, .review-name, .location, .location-name {
+  display: inline-block;
+}
+
+.review-name {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.star {
+  padding-right: 5px;
+  margin-top: 10px;
+  color: #fcba03;
+}
+
+.review-profile {
+  background-color: #b8279f;
+  color: var(--bobux-light);
+  border-radius: 50%;
+  font-size: 30px;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+}
+
+.review-content {
+  font-size: 17px;
+  margin-top: 10px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.reviewblue {
+  background-color: var(--bobux-blue);
+}
+
+.reviewgreen {
+  background-color: #16ba19;
+}
+
+.location {
+  background-color: var(--bobux-dark);
+  color: var(--bobux-light);
+  border-radius: 5%;
+  height: 100px;
+  width: 100px;
+}
+
+.columbus {
+  background-image: url("./assets/images/bobuxcolumbus.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.square {
+  background-image: url("./assets/images/bobuxsquare.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dubai {
+  background-image: url("./assets/images/bobuxdubai.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.location-name {
+  font-size: 25px;
+  margin-left: 10px;
+  position: absolute;
+  margin-top: 40px;
+}
+
+.bottombar {
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  width: -moz-calc(100% - 40px); /* cross-browser compatibility like a true dev */
+  width: -webkit-calc(100% - 40px);
+  width: -o-calc(100% - 40px);
+  width: calc(100% - 40px);
+  background-color: var(--bobux-dark);
+  margin-top: 30px;
 }
