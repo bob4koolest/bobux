@@ -40,6 +40,6 @@ function checkBooking() {
     document.getElementById("bdate").style.width = "94%";
     document.getElementById("bdiv").style.width = "100%";
     document.getElementById("bookingsubmit").style.width = "100%";
-  }, 1000);
+  }, 4000);
 
 }
